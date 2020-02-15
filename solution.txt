@@ -1,0 +1,15 @@
+case '=':
+        {
+            current_ch = next_char(); //consume '='
+            if(current_ch == '=')
+            {
+                text += current_ch;
+                current_ch = next_char(); // consume '=' again
+                if(current_ch == '>')
+                {
+                    text += current_ch;
+                    next_char();
+                }
+            }
+            break;
+        }
